@@ -7,7 +7,7 @@ interface MessageService {
     suspend fun getAllMessages(): List<Message>
 
     companion object {
-        const val BASE_URL = "http://192.168.100.14:8080"
+        const val BASE_URL = "https://poetcodes.com/ktor-chat"
     }
 
     sealed class Endpoints(val url: String) {

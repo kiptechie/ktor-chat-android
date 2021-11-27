@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.Flow
 interface ChatSocketService {
 
     companion object {
-        const val BASE_URL = "ws://192.168.100.14:8080"
+        const val BASE_URL = "wss://poetcodes.com/ktor-chat"
     }
 
     sealed class Endpoints(val url: String) {
